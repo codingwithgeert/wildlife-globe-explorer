@@ -10,10 +10,11 @@ app.config["MONGO_URI"] = 'mongodb+srv://User63:admin3Lobe90@myfirstcluster-maf2
 mongo = PyMongo(app)
 
 @app.route('/')
-@app.route('/get_spotlist')
-def get_spotlist():
-    return render_template("spotlist.html", 
-                          spotlist=mongo.db.spotlist.find())
+@app.route('/go_home')
+def go_home():
+    return render_template("index.html")
+
+    
                           
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
