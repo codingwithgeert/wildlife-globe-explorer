@@ -14,7 +14,18 @@ mongo = PyMongo(app)
 def go_home():
     return render_template("index.html")
 
+
+@app.route('/add_spot')
+def add_spot():
+    return render_template("addspot.html")
     
+@app.route('/insert_spot', methods=['POST'])
+def insert_spot():
+    spotlist =  mongo.db.spotlist
+    spotlist.insert_one(request.form.to_dict())
+    return redirect(url_for('add_spot'))
+    
+                           
                           
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
