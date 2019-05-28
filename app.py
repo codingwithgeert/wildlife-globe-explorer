@@ -19,11 +19,15 @@ def go_home():
 def add_spot():
     return render_template("addspot.html")
     
+@app.route('/spotlist_list')
+def spotlist_list():
+    return render_template("spotlist.html")
+    
 @app.route('/insert_spot', methods=['POST'])
 def insert_spot():
     spotlist =  mongo.db.spotlist
     spotlist.insert_one(request.form.to_dict())
-    return redirect(url_for('add_spot'))
+    return redirect(url_for('spotlist_list'))
     
                            
                           
