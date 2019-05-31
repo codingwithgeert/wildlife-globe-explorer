@@ -9,12 +9,12 @@ app.config["MONGO_URI"] = 'mongodb+srv://User63:admin3Lobe90@myfirstcluster-maf2
 
 mongo = PyMongo(app)
 
-@app.route('/')    
-@app.route('/get_spot')
+  
+@app.route('/spotlist_list')
 def get_spot():
      return render_template("spotlist.html", 
                            spotlists=mongo.db.spotlist.find())
-
+@app.route('/')  
 @app.route('/go_home')
 def go_home():
     return render_template("index.html")
