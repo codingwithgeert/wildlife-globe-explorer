@@ -1,25 +1,27 @@
 {% extends 'base.html' %} {% block content %}
-    <ul class="collapsible" data-collapsible="accordion">
-        {% for spotlist in spotlists %}
-        <li>
-            <div class="collapsible-header">
 
-                <div class=" spotlist_header col s9">
-                    <label>animal</label><i class="material-icons">expand_more</i>{{spotlist.animal_name}} 
-                </div>
+<ul class="collapsible" data-collapsible="accordion">
+    {% for spotlist in spotlists %}
+    <div class="container col s3">
+        <div class="row">
+            <img src="{{spotlist.animal_image}}" height="150" width="150">
+        </div>
+    </div>
+    <li>
+        <div class="collapsible-header">
+
+            <div class=" spotlist_header col s9">
+                <label>animal</label><i class="material-icons">expand_more</i>{{spotlist.animal_name}}
             </div>
-            <div class="collapsible-body">
-                <span>
-                    {{spotlist.animal_info}} 
-                </span>
-            </div>
-             <div class="collapsible-body">
-                <span>
+        </div>
+    
+        <div class="collapsible-body">
+            <span>
                     {{spotlist.animal_location}} 
-                    <img src="{{spotlist.animal_image}}"height="200" width="200">
+                    
                 </span>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
 {% endblock %}
