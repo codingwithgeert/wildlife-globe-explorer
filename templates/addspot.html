@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <h3>Your spotted animal</h3>
+<div class="container"></div>
 <div class="row">
   <form action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
 
@@ -56,5 +57,6 @@
 </div>
 
 </form>
+</div>
 </div>
 {% endblock %}
