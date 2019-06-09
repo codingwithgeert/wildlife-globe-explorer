@@ -9,37 +9,43 @@ app.config["MONGO_URI"] = 'mongodb+srv://User63:admin3Lobe90@myfirstcluster-maf2
 
 mongo = PyMongo(app)
 
- #Pulls data entered to be shown in spotlist.html#
+ # Pulls data entered to be shown in spotlist.html #
 @app.route('/spotlist_list')
 def get_spot():
      return render_template("spotlist.html", 
                            spotlists=mongo.db.spotlist.find())
 
-#To make the link Home work and redirect back to index.html#
+# To make the link Home work and redirect back to index.html #
 @app.route('/')  
 @app.route('/go_home')
 def go_home():
     return render_template("index.html")
 
 
-#To make the link spotlist work and redirect back to spotlist.html#
+# To make the link spotlist work and redirect back to spotlist.html #
 @app.route('/spotlist_list')
 def spotlist_list():
     return render_template("spotlist.html")
 
-#to make the link add spot work and redirect back to the addspot.html*
+# to make the link add spot work and redirect back to the addspot.html #
 @app.route('/add_spot')
 def add_spot():
     return render_template("addspot.html")
     
 
-#What user typed in form is send to the database#    
+# What user typed in form is send to the database #    
 @app.route('/insert_spot', methods=['POST'])
 def insert_spot():
     spotlist =  mongo.db.spotlist
     spotlist.insert_one(request.form.to_dict())
     return redirect(url_for('spotlist_list'))
     
+
+# Edit the spotlist entry into something else #
+@app.route("/edit_spot/<spotlist_id>")
+def edit_spot(spotlist_id):
+    the_spotlist = mongo.db.spotlist.find_one({"_id": ObjectId(spotlist_id)})
+    return render_template('editspot.html', spotlist=the_spotlist)
                            
                           
 if __name__ == '__main__':
