@@ -1,19 +1,20 @@
 {% extends 'base.html' %} {% block content %}
 <h3>Your spotted animal</h3>
+
 <div class="container"></div>
 <div class="row">
   <form action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
 
     <div class="input-field col s12">
       <i class="material-icons prefix">fingerprint</i>
-      <input id="animal_name" name="animal_name" type="text">
+      <input id="animal_name" name="animal_name" type="text" class="validate" value="{{spotlist.animal_name}}">
       <label for="icon_prefix">Animal name</label>
     </div>
 </div>
 <div class="row">
   <div class="input-field col s12">
     <i class="material-icons prefix">subject</i>
-    <textarea name="animal_description" id="animal_description" class="materialize-textarea"></textarea>
+    <textarea name="animal_description" id="animal_description" class="materialize-textarea">{{spotlist.animal_description}}</textarea>
     <label for="icon_telephone">Animal Description</label>
   </div>
 </div>
@@ -21,7 +22,7 @@
 <div class="row">
   <div class="input-field col s12">
     <i class="material-icons prefix">wc</i>
-    <textarea name="animal_gender" id="animal_gender" class="materialize-textarea"></textarea>
+    <textarea name="animal_gender" id="animal_gender" class="materialize-textarea">{{spotlist.animal_gender}}</textarea>
     <label for="icon_prefix">Gender</label>
   </div>
 </div>
@@ -29,7 +30,7 @@
 <div class="row">
   <div class="input-field col s12">
     <i class="material-icons prefix">pin_drop</i>
-    <textarea name="animal_location" id="animal_location" class="materialize-textarea"></textarea>
+    <textarea name="animal_location" id="animal_location" class="materialize-textarea">{{spotlist.animal_location}}</textarea>
     <label for="icon_prefix">Location</label>
   </div>
 </div>
@@ -45,18 +46,28 @@
 <div class="row">
   <div class="input-field col s12">
     <i class ="material-icons prefix">insert_photo</i>
-    <textarea name="animal_image" id="animal_image" class="materialize-textarea"></textarea>
+    <textarea name="animal_image" id="animal_image" class="materialize-textarea">{{spotlist.animal_image}}</textarea>
     <label for="icon_prefix">Image URL</label>
   </div>
 </div>
 
 <div class="row">
-  <button class="btn waves-effect waves-light" type="submit" name="action">Add Animal
+  <button class="btn waves-effect waves-light" type="submit" name="action">Edit Animal
                 <i class="material-icons right">playlist_add</i>
              </button>
 </div>
 
 </form>
 </div>
-< /div>
-{% endblock %}
+</div>
+
+ 
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        date_found = Date.parse('{{spotlist.date_found}}');
+        $('#date_found').pickadate('picker').set('select', date_found, { format: 'dd/mm/yyyy' }).trigger('change');
+    });
+</script>
+{% endblock%}
