@@ -60,6 +60,13 @@ def update_spot(spotlist_id):
         'animal_image':request.form.get('animal_image')
     })
     return redirect(url_for('spotlist_list'))
+    
+@app.route('/delete_spot/<spotlist_id>')
+def delete_spot(spotlist_id):
+    mongo.db.spotlist.remove({'_id' : ObjectId(spotlist_id)})
+    return redirect(url_for('spotlist_list'))
+
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
