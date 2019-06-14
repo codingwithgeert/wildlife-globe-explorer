@@ -21,7 +21,6 @@ def get_spot():
 def go_home():
     return render_template("index.html")
 
-
 # To make the link spotlist work and redirect back to spotlist.html #
 @app.route('/spotlist_list')
 def spotlist_list():
@@ -32,7 +31,6 @@ def spotlist_list():
 def add_spot():
     return render_template("addspot.html")
     
-
 # What user typed in form is send to the database #    
 @app.route('/insert_spot', methods=['POST'])
 def insert_spot():
@@ -40,7 +38,6 @@ def insert_spot():
     spotlist.insert_one(request.form.to_dict())
     return redirect(url_for('spotlist_list'))
     
-
 # Edit the spotlist entry into something else #
 @app.route('/edit_spot/<spotlist_id>')
 def edit_spot(spotlist_id):
@@ -65,9 +62,7 @@ def update_spot(spotlist_id):
 def delete_spot(spotlist_id):
     mongo.db.spotlist.remove({'_id' : ObjectId(spotlist_id)})
     return redirect(url_for('spotlist_list'))
-
     
-
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
