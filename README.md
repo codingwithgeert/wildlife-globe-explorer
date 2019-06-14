@@ -31,11 +31,21 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- [Materialize](https://materializecss.com/) 
+    - The project uses **Materialize** as a framework.
+- HTML
+    -  standard markup language for this project.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Cloud9](https://c9.io) 
+    -**Cloud9** used for their IDE while building and testing the website.
+- CSS3
+    - The project uses **CSS3** to style it.
 
+- [GitHub](https://github.com/)
+    - The project uses **GitHub** to store and share all project code to the github site.
+
+- [Heroku](https://www.heroku.com/)
+    - The application is deployed to **heroku** 
 
 ## Testing
 
@@ -58,15 +68,33 @@ You should also mention in this section any interesting bugs or problems you dis
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
+This project was developed using the [Cloud9 IDE](https://c9.io), committed to git and pushed to GitHub using the built in function within cloud9.
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+To deploy this project to GitHub Pages from its GitHub repository, the following steps were done:
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+1. Log into GitHub account.
+2. From the list of repositories on the screen, select Errepulify/Repositories/Animal-bites
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down menu labelled None and select Master Branch
+6. On selecting Master Branch the page is automatically refreshed, the repository is now ready to be deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+### How to run this project locally
+
+To clone this project from GitHub:
+1. Follow this link to the [GitHub repository](https://github.com/Errepulify/wildlife-globe-explorer).
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository. 
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type ```git clone```, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/USERNAME/REPOSITORY
+```
+7. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
 
 ## Credits
