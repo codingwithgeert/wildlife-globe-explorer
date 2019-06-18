@@ -1,19 +1,17 @@
 {% extends 'base.html' %} {% block content %}
+<div class="container">
 <h3>Your spotted animal</h3>
-<div class="container"></div>
+    <form class="blue-grey lighten-5" action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
 <div class="row">
-  <form action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
-
-    <div class="input-field col s12">
-      <i class="material-icons prefix">fingerprint</i>
-      <input id="animal_name" name="animal_name" type="text">
-      <label for="icon_prefix">Animal name</label>
-    </div>
+  <div class="input-field col s12">
+    <i class="material-icons prefix">fingerprint</i>
+    <input id="animal_name" name="animal_name" type="text">
+    <label for="icon_prefix">Animal name</label>
+  </div>
 </div>
 <div class="row">
   <div class="input-field col s12">
-    <i class="material-icons prefix">subject</i>
-    <textarea name="animal_description" id="animal_description" class="materialize-textarea"></textarea>
+    <i class="material-icons prefix">subject</i><textarea name="animal_description" id="animal_description" class="materialize-textarea"></textarea>
     <label for="icon_telephone">Animal Description</label>
   </div>
 </div>
@@ -44,7 +42,7 @@
 
 <div class="row">
   <div class="input-field col s12">
-    <i class ="material-icons prefix">insert_photo</i>
+    <i class="material-icons prefix">insert_photo</i>
     <textarea name="animal_image" id="animal_image" class="materialize-textarea"></textarea>
     <label for="icon_prefix">Image URL</label>
   </div>
@@ -55,8 +53,6 @@
                 <i class="material-icons right">playlist_add</i>
              </button>
 </div>
-
 </form>
 </div>
-< /div>
 {% endblock %}
