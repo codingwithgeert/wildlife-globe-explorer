@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+    <h3>Contact me</h3>
+    <form class="blue-grey lighten-5 col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input placeholder="Enter your email here" id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea placeholder="Enter your message here" id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Message</label>
+            </div>
+
+            <div>
+                <button class="btn waves-effect waves-light">Send Message</button>
+                    
+                </div>
+    </form>
+    </div>
+    {% endblock %}
