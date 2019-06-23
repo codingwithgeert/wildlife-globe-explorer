@@ -11,8 +11,9 @@ nav .brand-logo {
 }
 
 body {
-    background-image: url(https://media.istockphoto.com/vectors/sunrise-over-green-hills-vector-id531242144?s=2048x2048);
-    
+    background-image: url(https://image.shutterstock.com/image-vector/amazon-jungle-trees-wilderness-600w-92162701.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -53,3 +54,4 @@ p {
     margin-left:6rem;
     margin-top:5rem;
 }
+
