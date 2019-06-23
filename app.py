@@ -30,7 +30,12 @@ def spotlist_list():
 @app.route('/add_spot')
 def add_spot():
     return render_template("addspot.html")
-    
+
+# To make the link contact work and redirect back to contact.html #
+@app.route('/contact_me')
+def contact_me():
+    return render_template("contact.html")
+
 # What user typed in form is send to the database #    
 @app.route('/insert_spot', methods=['POST'])
 def insert_spot():
