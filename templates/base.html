@@ -10,14 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
+
 
 </head>
 
 <body>
     <header>
-
-
         <nav>
             <div class="nav-wrapper green">
                 <a href='go_home' class="brand-logo">Wildlife Globe Explorer</a>
@@ -38,9 +36,17 @@
         </nav>
 
     </header>
-    <div class="container">
-        {% block content %} {% endblock %}
-    </div>
+    <main>
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <div class="footer green">
+            Footer
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript">
@@ -57,7 +63,6 @@
             close: 'Ok',
             closeOnSelect: false // Close upon selecting a date,
         });
-        
     </script>
 </body>
 
