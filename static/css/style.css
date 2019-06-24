@@ -3,55 +3,74 @@
     padding: 0;
 }
 
-nav .brand-logo {
-    font-size: 1.9rem;
-    line-height: 2rem;
-    text-align: center;
-    color:#02111B;
-}
-
 body {
     background-image: url(https://image.shutterstock.com/image-vector/amazon-jungle-trees-wilderness-600w-92162701.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.footer {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+@media (max-width: 575.98px) {
+    nav .brand-logo {
+        font-size: 1.9rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #02111B;
+    }
+
+
+
+    nav .brand-logo {
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        text-align: center;
+
+    }
+
+    h2 {
+        color: #283D3B;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        border: 2.5px ridge #695b50;
+        background: #f9eccc;
+
+    }
+
+    p {
+        color: #283D3B;
+        background: rgba(249, 236, 204);
+        font-size: 1.5rem;
+        border: 1px ridge #695b50;
+
+
+    }
+
+    .addbtn {
+        margin-top: 5rem;
+        margin-left: 6rem;
+        font-size: 1.3rem;
+    }
+
+    .startbtn {
+        margin-left: 6rem;
+        margin-top: 5rem;
+    }
+
+    .input-field label {
+        color: #4e342e;
+
+    }
     
+   .btncontact {
+    max-width: 100%;
+    margin: 6rem 7rem;
 }
 
-nav .brand-logo {
-    font-weight: normal;
-    font-size: 1.8rem;
-    line-height: 1.9rem;
-    text-align: center;
-    
 }
-
-h2 {
-   color:#283D3B;
-    font-size: 3rem;
-    font-weight: normal;
-    text-align: center;
-     border: 2.5px ridge #695b50;
-     background:#f9eccc;
-    
-}
-
-p {
-    color:#283D3B;
-    background: rgba(249, 236, 204);
-    font-size: 1.5rem;
-     border: 1px ridge #695b50;
-    
- 
-}
-
-.addbtn{
-    margin-top: 5rem;
-    margin-left: 6rem;
-    font-size: 1.3rem;
-}
-
-.startbtn{
-    margin-left:6rem;
-    margin-top:5rem;
-}
-
