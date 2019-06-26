@@ -39,13 +39,13 @@ footer {
         font-weight: normal;
         text-align: center;
         border: 2.5px ridge #695b50;
-        background: #f9eccc;
+        background: #fff9c4;
 
     }
 
     p {
         color: #283D3B;
-        background: rgba(249, 236, 204);
+        background:#fff9c4;
         font-size: 1.5rem;
         border: 1px ridge #695b50;
 
