@@ -104,6 +104,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ### Media
 - The photos used in this site were obtained from istockphoto.com
+- https://www.shutterstock.com/nl/image-vector/amazon-jungle-trees-wilderness-92162701
 
 ### Acknowledgements
 
