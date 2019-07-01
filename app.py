@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
+
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'wildlife_globe'
 app.config["MONGO_URI"] = 'mongodb+srv://User63:admin3Lobe90@myfirstcluster-maf2n.mongodb.net/wildlife_globe?retryWrites=true'
@@ -14,6 +15,8 @@ mongo = PyMongo(app)
 def get_spot():
      return render_template("spotlist.html", 
                            spotlists=mongo.db.spotlist.find())
+
+
 
 # To make the link Home work and redirect back to index.html #
 @app.route('/')  
@@ -30,6 +33,11 @@ def spotlist_list():
 @app.route('/add_spot')
 def add_spot():
     return render_template("addspot.html")
+    
+# to make the link search animal work and redirect back to the search.html #
+@app.route('/search_ani')
+def search_ani():
+    return render_template("search.html")
 
 # To make the link contact work and redirect back to contact.html #
 @app.route('/contact_me')
@@ -67,6 +75,9 @@ def update_spot(spotlist_id):
 def delete_spot(spotlist_id):
     mongo.db.spotlist.remove({'_id' : ObjectId(spotlist_id)})
     return redirect(url_for('spotlist_list'))
+    
+
+    
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
