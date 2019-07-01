@@ -1,21 +1,38 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
   <h2>Your spotted animal</h2>
-  <form class="yellow lighten-4" action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
+  <form class="form yellow lighten-4" action="{{ url_for('insert_spot') }}" method="POST" class="col s12">
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">fingerprint</i>
         <input id="animal_name" name="animal_name" type="text">
         <label for="icon_prefix">Animal name</label>
+        
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
-        <i class="material-icons prefix">subject</i><textarea name="animal_description" id="animal_description" class="materialize-textarea"></textarea>
-        <label for="icon_telephone">Animal Description</label>
+        <i class="material-icons prefix">subject</i>
+        <textarea name="animal_description" id="animal_description" class="materialize-textarea"></textarea>
+        <label for="icon_prefix">Animal Description</label>
       </div>
     </div>
 
+  <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">wc</i>
+        <select id="animal_class" name="animal_class" type="text">
+                        <option value="" disabled selected>Choose class</option>
+                        <option value="Mammals">Mammal</option>
+                        <option value="Birds">Birds</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Reptiles">Reptiles</option>
+                        <option value="Amphibians">Amphibians</option>
+                        <option value="Arthropods">Arthropods</option>
+                     </select>
+      </div>
+    </div>
+  
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">wc</i>
