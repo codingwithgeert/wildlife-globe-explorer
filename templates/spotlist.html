@@ -2,19 +2,12 @@
 
 <ul class="collapsible popout" data-collapsible="accordion">
     {% for spotlist in spotlists %}
-    <div class="container">
-        <div class="row">
-            <div class="col s6">
-                <img class="responsive-img" src="{{spotlist.animal_image}}">
-            </div>
-        </div>
-    </div>
     <li>
         <div class="collapsible-header">
             <div class="col s3">
-                {{spotlist.animal_name}}
+                <img class="responsive-img" src="{{spotlist.animal_image}}"> {{spotlist.animal_name}}
             </div>
-            <div class="col s9">
+            <div class="col s8">
                 <i class="material-icons">expand_more</i>
             </div>
 
@@ -29,8 +22,14 @@
             </span>
         </div>
     </li>
-    <a href="{{url_for('edit_spot', spotlist_id=spotlist._id)}}" class=" bottun2 waves-effect waves-light btn">Edit</a>
-    <a href="{{url_for('delete_spot', spotlist_id=spotlist._id)}}" class="waves-effect waves-light btn modal-trigger red" href="#modal1">Delete</a>
+
+    <div class="row">
+        <div class="col s6"><a href="{{url_for('edit_spot', spotlist_id=spotlist._id)}}" class=" edit waves-effect waves-light btn">Edit</a>
+            <div class="col s6"><a href="{{url_for('delete_spot', spotlist_id=spotlist._id)}}" class=" delete waves-effect waves-light btn red">Delete</a>
+            </div>
+        </div>
+    </div>
+
     {% endfor %}
 </ul>
 {% endblock %}
