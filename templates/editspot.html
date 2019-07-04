@@ -19,11 +19,16 @@
       </div>
     </div>
     
-    <div class="row">
+    
+<div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">wc</i>
-        <textarea name="animal_gender" id="animal_gender" class="materialize-textarea">{{spotlist.animal_gender}}</textarea>
-        <label for="icon_prefix">Gender</label>
+        <select id="animal_gender" name="animal_gender" type="text">
+           <option value="animal_gender" >Choose Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="unknown">Unknown</option>
+          </select>
       </div>
     </div>
 
