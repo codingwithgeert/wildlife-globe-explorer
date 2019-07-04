@@ -39,6 +39,7 @@ def add_spot():
 @app.route('/search_ani')
 def search_ani():
     return render_template("search.html")
+    
 
 # testing to get search function #
 
@@ -47,9 +48,11 @@ def search_class():
     spotlist=mongo.db.spotlist
     if request.method == 'POST':
         requested_type = request.form.get('animal_class')
+        print(requested_type)
         spotlist = mongo.db.spotlist.find({"animal_class": requested_type})
+        
         return render_template("results.html", spotlist=spotlist)
-    
+        
 # To make the link contact work and redirect back to contact.html #
 @app.route('/contact_me')
 def contact_me():
@@ -86,8 +89,6 @@ def update_spot(spotlist_id):
 def delete_spot(spotlist_id):
     mongo.db.spotlist.remove({'_id' : ObjectId(spotlist_id)})
     return redirect(url_for('spotlist_list'))
-    
-
     
     
 if __name__ == '__main__':
