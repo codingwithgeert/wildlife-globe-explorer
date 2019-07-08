@@ -47,11 +47,11 @@ def search_ani():
 def search_class():
     spotlist=mongo.db.spotlist
     if request.method == 'POST':
-        requested_type = request.form.get('animal_class')
-        print(requested_type)
-        spotlist = mongo.db.spotlist.find({"animal_class": requested_type})
-        
+        requested_animal_class = request.form.get('animal_class')
+        spotlist = mongo.db.spotlist.find_one({"animal_class": requested_animal_class})
         return render_template("results.html", spotlist=spotlist)
+         
+    return render_template("search.html")
         
 # To make the link contact work and redirect back to contact.html #
 @app.route('/contact_me')
