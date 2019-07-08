@@ -1,15 +1,17 @@
 {% extends 'base.html' %} {% block content %}
 <div class="row">
-    <h3>Contact me</h3>
-    <form class="blue-grey lighten-5 col s12">
+    <h2>Contact</h2>
+    <form class="form yellow lighten-4 col s12">
         <div class="row">
             <div class="input-field col s12">
+                 <i class="material-icons prefix">email</i>
                 <input placeholder="Enter your email here" id="email" type="email" class="validate">
                 <label for="email">Email</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
+                 <i class="material-icons prefix">message</i>
                 <textarea placeholder="Enter your message here" id="textarea1" class="materialize-textarea"></textarea>
                 <label for="textarea1">Message</label>
             </div>
@@ -18,7 +20,7 @@
     <div class="container">
         <div class="row">
             <button class="btncontact waves-effect waves-light">Send Message
-                <i class="material-icons left">mail</i>
+                <i class="material-icons left">send</i>
              </button>
         </div>
     </div>
