@@ -3,9 +3,9 @@
 <ul class="collapsible popout" data-collapsible="accordion">
     {% for spotlist in spotlists %}
     <li>
-        <div class="collapsible-header">
+        <div class="light-green lighten-1 collapsible-header">
             <div class="col s3">
-                <img class="responsive-img" src="{{spotlist.animal_image}}"> {{spotlist.animal_name}}
+                <img class="responsive-img" src="{{spotlist.animal_image}}"> <b class ="b-tag"><br>{{spotlist.animal_name}}</b>
             </div>
             <div class="col s8">
                 <i class="material-icons">expand_more</i>
@@ -15,12 +15,12 @@
             </div>
         </div>
 
-        <div class="collapsible-body">
+        <div class="yellow lighten-4 collapsible-body">
             <span>
-                    The location of animal seen: {{spotlist.animal_location}}<br> 
-                    This Animal belong to the class of {{spotlist.animal_typ}}<br>
-                    The date of the animal seen:{{spotlist.date_found}}
-                    The gender is a {{spotlist.animal_gender}}
+                    <b>Location of animal seen:</b> <u>{{spotlist.animal_location}}</u><br> 
+                    <b>Animal class:</b> <u>{{spotlist.animal_class}}</u><br>
+                    <b>Date seen:</b> <u>{{spotlist.date_found}}</u><br>
+                    <b>Gender is a:</b> <u>{{spotlist.animal_gender}}</u>
             </span>
         </div>
     </li>
