@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     background-image: url(https://image.shutterstock.com/image-vector/amazon-jungle-trees-wilderness-600w-92162701.jpg);
@@ -74,12 +74,59 @@ footer {
 }
 
 .delete {
-   margin-top: 12px;
+    margin-top: 12px;
 }
 
-.responsive-img{
-    max-height:500px;
-    max-width:500px;
-    height:auto;
-    width:auto;
+.responsive-img {
+    max-height: 500px;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
+.left {
+    float: left;
+    padding-left: 6px;
+    margin-right: 5px;
+}
+
+.btncontact {
+    margin-left: 3rem;
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .btnaddspot {
+        margin-left: 8rem;
+    }
+
+    .edit {
+        margin-left: 11rem;
+    }
+
+    nav .brand-logo {
+        font-size: 2.6rem;
+        line-height: 4rem;
+
+    }
+    .indexheader {
+        font-size: 3.1rem;
+        margin-top:7rem;
+    }
+    
+    .indexpar {
+    margin-top: 3rem;
+    margin-left: 6rem;
+    font-size: 1.9rem;
+}
+
+    .startbtn {
+    font-size: 1.8rem;
+    margin-left: 10rem;
+    /* margin-top: 2rem; */
+}
+    
+   
 }
