@@ -1,3 +1,5 @@
+
+/* Style on all pages */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -22,19 +24,7 @@ main {
 
 }
 
-.row {}
-
-header {
-    border-bottom: #3baf41 3px solid;
-}
-
-nav .brand-logo {
-    font-weight: normal;
-    font-size: 1.8rem;
-    line-height: 1.9rem;
-    text-align: center;
-}
-
+/* h2 styling on all pages */
 h2 {
     color: #000000;
     font-size: 3rem;
@@ -45,6 +35,7 @@ h2 {
 
 }
 
+/* P styling on all pages */
 p {
     color: #000000;
     background: #fff9c4;
@@ -52,31 +43,62 @@ p {
     border: 1px ridge #695b50;
 }
 
-.startbtn {
-    margin-left: 4rem;
-    margin-top: 3rem;
+/* ---BASE.HTML --- */
+
+/* Header Style */
+
+header {
+    border-bottom: #3baf41 3px solid;
 }
 
+/* Header logo style */
+nav .brand-logo {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    text-align: center;
+}
+
+/* Styling of the footer */
 footer {
     padding: 0;
     text-align: center;
     line-height: 56px;
 }
 
+/* --- INDEX.HTML --- */
+
+/* click me button styling */
+.startbtn {
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+
+
+/* --- ADDSPOT.HTML --- */
+
+/* Form Styling */
+
 .yellow.lighten-4 {
     margin-bottom: 3rem;
 }
 
+/* --- SPOTLIST.HTML --- */
+
+/* Edit button styling */
 .edit {
     margin-top: 12px;
     margin-left: 3rem;
     padding-left: 30px;
 }
 
+/* Delete button styling */
 .delete {
     margin-top: 12px;
 }
 
+/* Image styling that are in the spotlist */
 .responsive-img {
     max-height: 500px;
     max-width: 500px;
@@ -84,12 +106,16 @@ footer {
     width: auto;
 }
 
+/* --- CONTACT.HTML --- */
+
+/*Styling of material icon 'Send'*/
 .left {
     float: left;
     padding-left: 6px;
     margin-right: 5px;
 }
 
+/* Styling of send message button */
 .btncontact {
     margin-left: 3rem;
     padding-left: 0rem;
@@ -97,14 +123,24 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
-    .btnaddspot {
+
+
+/* --- Buttons -- */
+
+/* button in addspot.html */
+    .btnaddanimal {
         margin-left: 8rem;
     }
 
+/* buttons in spotlist.html */
     .edit {
         margin-left: 11rem;
     }
+    
+    .delete{
+        margin-left: 11rem;
+    }
+
 
     nav .brand-logo {
         font-size: 2.6rem;
@@ -113,20 +149,25 @@ footer {
     }
     .indexheader {
         font-size: 3.1rem;
-        margin-top:7rem;
+        margin-top: 7rem;
     }
-    
+
     .indexpar {
-    margin-top: 3rem;
-    margin-left: 6rem;
-    font-size: 1.9rem;
-}
+        margin-top: 3rem;
+        margin-left: 6rem;
+        font-size: 1.9rem;
+    }
 
     .startbtn {
-    font-size: 1.8rem;
-    margin-left: 10rem;
-    /* margin-top: 2rem; */
-}
-    
-   
+        font-size: 1.8rem;
+        margin-left: 10rem;
+        /* margin-top: 2rem; */
+    }
+
+    .brown {
+        font-size: 1.5rem;
+
+    }
+
+
 }
