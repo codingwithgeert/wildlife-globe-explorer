@@ -17,8 +17,6 @@ def get_spot():
                            spotlists=mongo.db.spotlist.find())
                            
 
-
-
 # To make the link Home work and redirect back to index.html #
 @app.route('/')  
 @app.route('/go_home')
@@ -34,25 +32,19 @@ def spotlist_list():
 @app.route('/add_spot')
 def add_spot():
     return render_template("addspot.html")
-    
-# to make the link search animal work and redirect back to the search.html #
-@app.route('/search_ani')
-def search_ani():
-    return render_template("search.html")
-    
 
-# testing to get search function #
+@app.route('/search_animal')
+def search_animal():
+    spotlist=mongo.db.spotlist.find()
+    return render_template("search.html", spotlist=spotlist)
+    
+@app.route('/search_animal', methods=['POST'])
+def search_animal_by_class():
+    spotlist=mongo.db.spotlist.find()
+    search = request.form.get('search_animal_by_class')
+    spotlist_class_search = mongo.db.spotlist.find({"animal_class": {"$regex":search}})
+    return render_template("results.html", spotlist=spotlist, spotlist_class_search=spotlist_class_search)
 
-@app.route('/search_class', methods=['GET', 'POST'] )
-def search_class():
-    spotlist=mongo.db.spotlist
-    if request.method == 'POST':
-        requested_animal_class = request.form.get('animal_class')
-        spotlist = mongo.db.spotlist.find_one({"animal_class": requested_animal_class})
-        return render_template("results.html", spotlist=spotlist)
-         
-    return render_template("search.html")
-        
 # To make the link contact work and redirect back to contact.html #
 @app.route('/contact_me')
 def contact_me():
@@ -78,6 +70,7 @@ def update_spot(spotlist_id):
     {
         'animal_name':request.form.get('animal_name'),
         'animal_description': request.form.get('animal_description'),
+        'animal_class' :request.form.get('animal_class'),
         'date_found': request.form.get('date_found'),
         'animal_location':request.form.get('animal_location'),
         'animal_gender':request.form.get('animal_gender'),
@@ -89,8 +82,7 @@ def update_spot(spotlist_id):
 def delete_spot(spotlist_id):
     mongo.db.spotlist.remove({'_id' : ObjectId(spotlist_id)})
     return redirect(url_for('spotlist_list'))
-    
-    
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
