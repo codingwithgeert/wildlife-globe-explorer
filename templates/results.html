@@ -1,8 +1,27 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} 
+{% block content%}
 
- {% for spotlist in spotlists %}
- show me the {{spotlist.animal_class}}
+
+
+
+<div class="row">
+{% for spotlist in spotlist %}
+
+    <div class="col s12 m6 l4">
+        
+                {% if spotlist.animal_class != "{{spotlist.animal_class}}" %}
+                
+                The class is: {{spotlist.animal_class}}
+               
+                {% else %}
+                
+                {% endif %}
+            </div>
+            
+    </div
 {% endfor %}
-  
+</div>        
+   
+
+
 {% endblock %}
