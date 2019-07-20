@@ -33,18 +33,6 @@ def spotlist_list():
 def add_spot():
     return render_template("addspot.html")
 
-@app.route('/search_animal')
-def search_animal():
-    spotlist=mongo.db.spotlist.find()
-    return render_template("search.html", spotlist=spotlist)
-    
-@app.route('/search_animal', methods=['POST'])
-def search_animal_by_class():
-    spotlist=mongo.db.spotlist.find()
-    search = request.form.get('search_animal_by_class')
-    spotlist_class_search = mongo.db.spotlist.find({"animal_class": {"$regex":search}})
-    return render_template("results.html", spotlist=spotlist, spotlist_class_search=spotlist_class_search)
-
 # To make the link contact work and redirect back to contact.html #
 @app.route('/contact_me')
 def contact_me():
