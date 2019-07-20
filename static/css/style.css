@@ -1,5 +1,5 @@
-
 /* Style on all pages */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -25,6 +25,7 @@ main {
 }
 
 /* h2 styling on all pages */
+
 h2 {
     color: #000000;
     font-size: 3rem;
@@ -36,6 +37,7 @@ h2 {
 }
 
 /* P styling on all pages */
+
 p {
     color: #000000;
     background: #fff9c4;
@@ -52,6 +54,7 @@ header {
 }
 
 /* Header logo style */
+
 nav .brand-logo {
     font-weight: normal;
     font-size: 1.8rem;
@@ -60,6 +63,7 @@ nav .brand-logo {
 }
 
 /* Styling of the footer */
+
 footer {
     padding: 0;
     text-align: center;
@@ -69,6 +73,7 @@ footer {
 /* --- INDEX.HTML --- */
 
 /* click me button styling */
+
 .startbtn {
     margin-left: 4rem;
     margin-top: 3rem;
@@ -87,6 +92,7 @@ footer {
 /* --- SPOTLIST.HTML --- */
 
 /* Edit button styling */
+
 .edit {
     margin-top: 12px;
     margin-left: 3rem;
@@ -94,11 +100,13 @@ footer {
 }
 
 /* Delete button styling */
+
 .delete {
     margin-top: 12px;
 }
 
 /* Image styling that are in the spotlist */
+
 .responsive-img {
     max-height: 500px;
     max-width: 500px;
@@ -109,6 +117,7 @@ footer {
 /* --- CONTACT.HTML --- */
 
 /*Styling of material icon 'Send'*/
+
 .left {
     float: left;
     padding-left: 6px;
@@ -116,6 +125,7 @@ footer {
 }
 
 /* Styling of send message button */
+
 .btncontact {
     margin-left: 3rem;
     padding-left: 0rem;
@@ -125,19 +135,18 @@ footer {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
 
-/* --- Buttons -- */
-
-/* button in addspot.html */
+    /* --- Buttons -- */
+    /* button in addspot.html */
     .btnaddanimal {
         margin-left: 8rem;
     }
 
-/* buttons in spotlist.html */
+    /* buttons in spotlist.html */
     .edit {
         margin-left: 11rem;
     }
-    
-    .delete{
+
+    .delete {
         margin-left: 11rem;
     }
 
@@ -169,5 +178,21 @@ footer {
 
     }
 
+    .btncontact {
+        margin-left: 12rem;
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
 
+    .forming {
+        font-size: 1rem;
+    }
+
+    nav a.button-collapse i {
+        font-size: 3rem;
+    }
+
+    .side-nav li>a {
+        font-size: 23px;
+    }
 }
