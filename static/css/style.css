@@ -114,6 +114,10 @@ footer {
     width: auto;
 }
 
+.collapsible.popout {
+    margin-top: 3rem;
+}
+
 /* --- CONTACT.HTML --- */
 
 /*Styling of material icon 'Send'*/
@@ -132,7 +136,7 @@ footer {
     padding-right: 1rem;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
 
 
     /* --- Buttons -- */
@@ -195,4 +199,52 @@ footer {
     .side-nav li>a {
         font-size: 23px;
     }
+}
+
+@media (min-width: 993px) {
+
+    nav .brand-logo {
+        margin-left: 3rem;
+    }
+
+    footer {
+        line-height: 65px;
+    }
+
+    .startbtn {
+        margin-left: 21rem;
+    }
+
+    .indexpar {
+        margin-left: 9rem;
+    }
+
+    nav ul a {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+
+    }
+
+    .btnaddanimal {
+        margin-left: 14rem;
+        font-size: 1.5rem;
+    }
+
+    .edit, .delete {
+        font-size: 1.5rem;
+        margin-left: 17rem;
+    }
+
+    b,
+    strong {
+        font-size: 1.2rem;
+
+    }
+    
+.btncontact {
+    font-size:1.5rem;
+    margin-left: 21.7rem;
+   
+}
+
 }
