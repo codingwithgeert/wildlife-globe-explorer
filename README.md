@@ -29,10 +29,9 @@ On tablet this hamburger icon isn't there and are the links just in the navigati
 
 ## Features
 
-- <u>Breed selector:</u> Allow users to click the box with a black down arrow next to it 'Choose a dog breed' and select a breed from the list.
-- <u>Reset all:</u> Allow users to click on the blue button with the white text: 'Reset All' , This will reset all the chart bars to default setting.
-- <u>Bar charts</u> Allow users to click on each bar chart. This will show the desired outcome picked by the user.
-
+- <u>Delete button:</u> Allow users to click the button to delete their animal they put in the spotlist
+- <u>Edit button:</u> Allow users to click on the button where they can edit their animal they put in the spotlist
+- <u>Accordion with pictures</u> Allow users to click on the black arrow next to the picture to have extra information pop out of their   animal
 ### Features Left to Implement
 
 - <u>Search function:</u> A search option for whichever the user typs in the search bar.
