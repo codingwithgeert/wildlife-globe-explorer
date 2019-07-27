@@ -70,6 +70,15 @@ footer {
     line-height: 56px;
 }
 
+.fa-github:before {
+    content: "\f09b";
+    margin-left: 1rem;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    margin-top: 1rem;
+}
+
 /* --- INDEX.HTML --- */
 
 /* click me button styling */
@@ -230,7 +239,8 @@ footer {
         font-size: 1.5rem;
     }
 
-    .edit, .delete {
+    .edit,
+    .delete {
         font-size: 1.5rem;
         margin-left: 17rem;
     }
@@ -240,11 +250,38 @@ footer {
         font-size: 1.2rem;
 
     }
-    
-.btncontact {
-    font-size:1.5rem;
-    margin-left: 21.7rem;
-   
+
+    .btncontact {
+        font-size: 1.5rem;
+        margin-left: 21.7rem;
+
+    }
+
 }
 
+@media (min-width: 1600px) {
+    .startbtn {
+        margin-left: 25rem;
+    }
+
+    .btnaddanimal {
+        margin-left: 20rem;
+
+    }
+
+    .edit,
+    .delete {
+        margin-left: 21rem;
+    }
+    
+    .btncontact {
+    margin-left: 27rem;
+}
+
+.yellow.lighten-4 {
+    margin-bottom: 9rem;
+}
+.forms{
+    margin-top: 8rem;
+}
 }
