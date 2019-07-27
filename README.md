@@ -1,6 +1,6 @@
 # Wild Animal Sighting
 
-A few days ago I was able to see a beaver in its natural environment.
+Not that long ago I was able to see a beaver in its natural environment.
 This made me thinking won't it be cool to have a website where you can have a database with all the animals you spotted in the wild.
 
 ## UX
@@ -12,11 +12,31 @@ This made me thinking won't it be cool to have a website where you can have a da
 
 - As a user I want to  be able to edit the data I submitted
 
-- As a user I want to push on a button that gives a like/+1 to a animal sighting
+- As a user I want to have a form to contact the developer of the website.
+
+#### Design
+
+The site is easy to use and got buttons with a clear use of style and design.
+On mobile devices the layout is with big buttons and big enough pictures of their animal (if added) in the spotlist.
+The navigation bar got a hamburger icon that brings up a sidenav with all the links to the pages.
+On tablet this hamburger icon isn't there and are the links just in the navigation bar to the right.
+
+### Wireframes
+
+- [Desktop Wireframe]
+- [Mobile Wireframe]
+
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+- <u>Delete button:</u> Allow users to click the button to delete their animal they put in the spotlist
+- <u>Edit button:</u> Allow users to click on the button where they can edit their animal they put in the spotlist
+- <u>Accordion with pictures</u> Allow users to click on the black arrow next to the picture to have extra information pop out of their   animal
+### Features Left to Implement
+
+- <u>Search function:</u> A search option for whichever the user typs in the search bar.
+- <u>Achievement system:<u/> The user can unlock different badges as achievements. Example: Spotted 10 different animals.
+
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
