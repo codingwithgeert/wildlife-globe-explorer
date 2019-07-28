@@ -71,9 +71,9 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Testing
 
-#### Manual testing: 
+### Manual testing: 
 
-##### 1. Add animal on the website:
+#### 1. Add animal on the website:
 
 ##### by clicking on the button
 1. Go to the begin page with the green button that read: "Click me".
@@ -97,7 +97,7 @@ Mobile:
 6. Now your animal got added to the list.
 
 
-##### 1. How to delete animal on the website:
+#### 2. How to delete animal on the website:
 Desktop and Tablet:
 1. Click on the third link with the text: "spotlist".
 2. Now you see the animal you added on the page.
@@ -111,14 +111,55 @@ Mobile:
 2. A side navigation comes up tot the left.
 3. Click the third link that read: "Spotlist".
 4. This brings you to a page with all the animals you added.
-5. If you not see any animal or data you put in go back to the step Add animal on the website.
+5. If you not see any animal or data you put in go back to "1. Add animal to the website".
 6. If you do see it then you can click on the button under the animal you want to delete.
 7. This is the red button with the text "Delete" on it.
 8. Be Aware that once it is clicked the data is gone forever unless you re add it again.
 
-##### 1. Edit the animal you put in the list:
+#### 3. Edit the animal you put in the list:
+Desktop and Tablet:
+1. Click on the third link with the text: "spotlist".
+2. Now you see the animal you added on the page.
+3. If you not see any animal or data you put in go back to "1. Add animal to the website".
+4. If you do see it then you can click on the button under the animal you want to delete.
+5. This is the green button with the text "Edit" on it.
+6. Now it brings you back to the form with your filled in content to be edited.
+7. If done click on the green button with the text "Edit Animal"
+8. This brings you back to the list with all your animals and you can see the edits you done.
 
-##### 1. See all the animals on the website you entered:
+Mobile:
+1. Click on the hamburger icon which is on the left of the title "Wildlife Globe Explorer"
+2. A side navigation comes up tot the left.
+3. Click the third link that read: "Spotlist".
+4. This brings you to a page with all the animals you added.
+5. If you not see any animal or data you put in go back to "1. Add animal to the website".
+6. If you do see it then you can click on the button under the animal you want to edit.
+7. This is the green button with the text "Edit" on it.
+8. Now it brings you back to the form with your filled in content to be edited.
+9. If done click on the green button with the text "Edit Animal"
+10. This brings you back to the list with all your animals and you can see the edits you done.
+
+
+#### 4. Contact the developer
+Desktop and Tablet:
+1. Click on the fourth link with the text: "contact".
+2. This brings up a form. Here you fill in your email and the message you want to be sent.
+3. After done click on the green button with the text "Send Message"
+4. This will send your message to the developer of the website.
+
+Mobile:
+1. Click on the hamburger icon which is on the left of the title "Wildlife Globe Explorer"
+2. A side navigation comes up tot the left.
+3. Click the fourth link that read: "Contact".
+4. This brings up a form. Here you fill in your email and the message you want to be sent.
+5. After done click on the green button with the text "Send Message" 
+6. 4. This will send your message to the developer of the website.
+
+#### 5. See all the animals on the website you entered:
+Desktop and Tablet:
+1. Click on the third link with the text: "spotlist".
+2. Now you see all the animal you added on the page.
+3. If you not see any animal or data you put in go back to "1. Add animal to the website".
 
 
 ## Deployment
