@@ -28,8 +28,9 @@ On tablet this hamburger icon isn't there and are the links just in the navigati
 
 ### Wireframes
 
-- [Desktop Wireframe]
-- [Mobile Wireframe]
+- [Desktop Homepage](https://i.ibb.co/D4fxFw7/Desktop-Homepage-test-2.png)
+- [Desktop Edit page](https://i.ibb.co/pzMQjXw/Desktop-Edit.png)
+- [Mobile Homepage](https://i.ibb.co/4NhSmQy/Mobile.png)
 
 
 ## Features
