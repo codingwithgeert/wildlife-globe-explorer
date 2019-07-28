@@ -1,7 +1,7 @@
 # Wild Globe Explorer
 
 <div align="center">
-<a href="https://ibb.co/hs87Yt1"><img src="https://i.ibb.co/qB1yJPF/Screenshot-6.png" target="_blank" rel="noopener" alt="page looks on all screen sizes" aria-label="page looks on all screen sizes" />
+<img src="https://i.ibb.co/qB1yJPF/Screenshot-6.png" alt="Screenshot-6" border="0"></a>
 </div>
 Not that long ago I was able to see a beaver in its natural environment.
 This made me thinking won't it be cool to have a website where you can have a database with all the animals you spotted in the wild.
@@ -43,7 +43,7 @@ On tablet this hamburger icon isn't there and are the links just in the navigati
 ### Features Left to Implement
 - Having an achievement page. Where you can unlock achievement trophies
   The user can get those by completing different task. Example: Spotted 10 different animals.
--  A search function so the user can search on different classes of animals. Birds, Reptiles, Mammals etc.
+-  A search function so the user can search on different classes of animals. Birds, Reptiles, Mammals
 
 
 
