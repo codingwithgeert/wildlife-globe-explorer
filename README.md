@@ -14,6 +14,8 @@ This made me thinking won't it be cool to have a website where you can have a da
 
 - As a user I want to have a form to contact the developer of the website.
 
+- As a user I want to be able to see all the animals I put in on the website.
+
 #### Design
 
 The site is easy to use and got buttons with a clear use of style and design.
