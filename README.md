@@ -1,7 +1,7 @@
 # Wild Globe Explorer
 
 <div align="center">
-<a href="https://ibb.co/hs87Yt1"><img src="https://i.ibb.co/qB1yJPF/Screenshot-6.png" alt="Screenshot-6" border="0"></a>
+<a href="https://ibb.co/hs87Yt1"><img src="https://i.ibb.co/qB1yJPF/Screenshot-6.png" target="_blank" rel="noopener" alt="page looks on all screen sizes" aria-label="page looks on all screen sizes" />
 </div>
 Not that long ago I was able to see a beaver in its natural environment.
 This made me thinking won't it be cool to have a website where you can have a database with all the animals you spotted in the wild.
