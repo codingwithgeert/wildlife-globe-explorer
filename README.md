@@ -37,24 +37,13 @@ On tablet this hamburger icon isn't there and are the links just in the navigati
 
 - <u>Delete button:</u> Allow users to click the button to delete their animal they put in the spotlist
 - <u>Edit button:</u> Allow users to click on the button where they can edit their animal they put in the spotlist
-- <u>Accordion with pictures</u> Allow users to click on the black arrow next to the picture to have extra information pop out of their   animal
-### Features Left to Implement
+- <u>Accordion with pictures</u> Allow users to click on the black arrow next to the picture to have extra information pop out of their animal
 
-- <u>Search function:</u> A search option for whichever the user typs in the search bar.
-- <u>Achievement system:<u/> The user can unlock different badges as achievements. Example: Spotted 10 different animals.
-
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 - Having an achievement page. Where you can unlock achievement trophies
--  A search function
+  The user can get those by completing different task. Example: Spotted 10 different animals.
+-  A search function so the user can search on different classes of animals. Birds, Reptiles, Mammals etc.
 
 
 
