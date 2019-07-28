@@ -71,23 +71,55 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+#### Manual testing: 
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+##### 1. Add animal on the website:
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+##### by clicking on the button
+1. Go to the begin page with the green button that read: "Click me".
+   2. Click on this button and it brings you to a page with the title: "Your spotted animal" with a form to fill in.
+   3. Fill in everything on the form and click the add animal button.
+   4. Now your animal got added to the list.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+##### by clicking on the link in the navigation bar
+ Desktop and Tablet:
+1. Go to any page on the website and click on the second link "Add Spot" link.
+2. This brings you to a page with the title "Your spotted animal" with a form to fill in.
+3. Fill in the form and click the add animal button.
+4. Now your animal got added to the list.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Mobile:
+1. Click on the hamburger icon which is on the left of the title "Wildlife Globe Explorer"
+2. A side navigation comes up to the left.
+3. Click the second link that reads: "Add Spot"
+4. This brings you to a page with the title "Your spotted animal" with a form to fill in.
+5. Fill in everything on the form and click the add animal button.
+6. Now your animal got added to the list.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+##### 1. How to delete animal on the website:
+Desktop and Tablet:
+1. Click on the third link with the text: "spotlist".
+2. Now you see the animal you added on the page.
+3. If you not see any animal or data you put in go back to the step Add animal on the website.
+4. If you do see it then you can click on the button under the animal you want to delete.
+5. This is the red button with the text "Delete" on it.
+6. Be Aware that once it is clicked the data is gone forever unless you re add it again.
+
+Mobile:
+1. Click on the hamburger icon which is on the left of the title "Wildlife Globe Explorer"
+2. A side navigation comes up tot the left.
+3. Click the third link that read: "Spotlist".
+4. This brings you to a page with all the animals you added.
+5. If you not see any animal or data you put in go back to the step Add animal on the website.
+6. If you do see it then you can click on the button under the animal you want to delete.
+7. This is the red button with the text "Delete" on it.
+8. Be Aware that once it is clicked the data is gone forever unless you re add it again.
+
+##### 1. Edit the animal you put in the list:
+
+##### 1. See all the animals on the website you entered:
+
 
 ## Deployment
 This project was developed using the [Cloud9 IDE](https://c9.io), committed to git and pushed to GitHub using the built in function within cloud9.
