@@ -1,5 +1,8 @@
-# Wild Animal Sighting
+# Wild Globe Explorer
 
+<div align="center">
+<a href="https://ibb.co/hs87Yt1"><img src="https://i.ibb.co/qB1yJPF/Screenshot-6.png" alt="Screenshot-6" border="0"></a>
+</div>
 Not that long ago I was able to see a beaver in its natural environment.
 This made me thinking won't it be cool to have a website where you can have a database with all the animals you spotted in the wild.
 
@@ -55,19 +58,39 @@ In addition, you may also use this section to discuss plans for additional featu
 
 - [Materialize](https://materializecss.com/) 
     - The project uses **Materialize** as a framework.
+    
 - HTML
     -  standard markup language for this project.
 
-- [Cloud9](https://c9.io) 
-    -**Cloud9** used for their IDE while building and testing the website.
+- [AWS Cloud9](https://aws.amazon.com/cloud9/) 
+    - **AWS Cloud9** used for their IDE while building and testing the website.
 - CSS3
     - The project uses **CSS3** to style it.
 
 - [GitHub](https://github.com/)
     - The project uses **GitHub** to store and share all project code to the github site.
 
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) 
+   - for the version control.
+
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) 
+   - the database used to have the data in the project.
+
+- [Imgbb](https://imgbb.com) 
+   - to upload all external images.
+
 - [Heroku](https://www.heroku.com/)
     - The application is deployed to **heroku** 
+
+- [JQuery](https://jquery.com) 
+    - DOM manipulation.
+
+- [Flask](https://flask.palletsprojects.com/en/1.0.x/) 
+    - render the pages.
+
+- [Google Fonts](https://fonts.google.com/) 
+    - for website fonts styles.
+
 
 ## Testing
 
