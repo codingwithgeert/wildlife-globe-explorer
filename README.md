@@ -53,6 +53,9 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 - Having an achievement page. Where you can unlock achievement trophies
+-  A search function
+
+
 
 ## Technologies Used
 
@@ -191,6 +194,13 @@ Mobile:
 4. Now you see all the animal you added on the page.
 5. If you not see any animal or data you put in go back to "1. Add animal to the website".
 
+#### Bugs
+- Datepicker
+  - Google Chrome:  When you are on the add animal page. And try to click on the datepicker it wont show up unless you first once clicked on the right mouse button.
+    This is a bug in Materialize itself.
+
+  
+
 
 ## Deployment
 This project was developed using the [AWS Cloud9 IDE](https://aws.amazon.com/cloud9/?origin=c9io), committed to git and pushed to GitHub using the built in function within cloud9.
@@ -258,16 +268,19 @@ SECRET_KEY | `<your_secret_key>`
 10. The site is now successfully deployed.
 
 
-## Credits
+## Media
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The picture used as background is from [shutterstock](https://www.shutterstock.com/nl/image-vector/amazon-jungle-trees-wilderness-92162701)
 
-### Media
-- The photos used in this site were obtained from istockphoto.com
-- https://www.shutterstock.com/nl/image-vector/amazon-jungle-trees-wilderness-92162701
+## Code
+
+- collapsible code is from [Materialize](https://materializecss.com/collapsible.html) 
+- testing code is from [Unittest](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIn)
 
 ### Acknowledgements
 
 - I received inspiration for this project from pokemon.
+- My mentor Juan Monetti who helped and explained me alot.
+- Special thanks to the tutor team of Code Institute to answer all my questions I had during this milestone project.
+- The webinairs of students in the Slack channel
 
