@@ -161,6 +161,13 @@ Desktop and Tablet:
 2. Now you see all the animal you added on the page.
 3. If you not see any animal or data you put in go back to "1. Add animal to the website".
 
+Mobile:
+1. Click on the hamburger icon which is on the left of the title "Wildlife Globe Explorer"
+2. A side navigation comes up tot the left.
+3. Click the fourth link that read: "Spotlist".
+4. Now you see all the animal you added on the page.
+5. If you not see any animal or data you put in go back to "1. Add animal to the website".
+
 
 ## Deployment
 This project was developed using the [Cloud9 IDE](https://c9.io), committed to git and pushed to GitHub using the built in function within cloud9.
