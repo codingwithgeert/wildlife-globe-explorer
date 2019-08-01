@@ -7,7 +7,7 @@
 </script>
 <div class="row">
     <h2>Contact</h2>
-    <form onsubmit="return sendMail(this);" class="yellow lighten-4 forms col s12 m12 l12">
+    <form onsubmit="return sendMail(this);" method="POST" class="yellow lighten-4 forms col s12 m12 l12">
         <div class="row">
             <div class="input-field col s12 m12">
                 <i class="material-icons prefix">person</i>
@@ -17,7 +17,7 @@
 
             <div class="input-field col s12 m12">
                 <i class="material-icons prefix">email</i>
-                <input placeholder="Enter your email here" id="email" type="email" class="validate">
+                <input placeholder="Enter your email here" id="emailaddress" type="email" class="validate">
                 <label for="email">Email</label>
             </div>
             <div class="input-field col s12 m12">
@@ -30,7 +30,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <button class="btn btncontact waves-effect waves-light green" type="submit">Send Message
+        <button class="btn btncontact waves-effect waves-light green">Send Message
                 <i class="material-icons left">send</i>
              </button>
     </div>
