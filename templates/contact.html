@@ -1,36 +1,39 @@
 {% extends 'base.html' %} {% block content %}
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         emailjs.init("user_Sl9kuDK368sOA51oT1MXg");
-        });
-   
+    })();
 </script>
-
 <div class="row">
     <h2>Contact</h2>
-    <form onsubmit="return sendMail(this);" menthod="POST" class=" yellow lighten-4 forms col s12 m12 l12">
+    <form onsubmit="return sendMail(this);" menthod="POST" class="yellow lighten-4 forms col s12 m12 l12">
         <div class="row">
+            <div class="input-field col s12 m12">
+                <i class="material-icons prefix">person</i>
+                <textarea placeholder="Enter your name here" id="name" class="materialize-textarea"></textarea>
+                <label for="textarea1">Name</label>
+            </div>
+
             <div class="input-field col s12 m12">
                 <i class="material-icons prefix">email</i>
                 <input placeholder="Enter your email here" id="email" type="email" class="validate">
                 <label for="email">Email</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m12">
                 <i class="material-icons prefix">message</i>
-                <textarea placeholder="Enter your message here" id="textarea1" class="materialize-textarea"></textarea>
+                <textarea placeholder="Enter your message here" id="projectsummary" class="materialize-textarea"></textarea>
                 <label for="textarea1">Message</label>
             </div>
+        </div>
     </form>
-    </div>
-    <div class="container">
-        <div class="row">
-            <button class="btn btncontact waves-effect waves-light green">Send Message
+</div>
+<div class="container">
+    <div class="row">
+        <button class="btn btncontact waves-effect waves-light green" type="submit">Send Message
                 <i class="material-icons left">send</i>
              </button>
-        </div>
     </div>
-    <script src="static/js/sendEmail.js"></script>
-    {% endblock %}
+</div>
+<script src="static/js/sendEmail.js"></script>
+{% endblock %}
