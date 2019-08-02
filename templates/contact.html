@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% block content %}
- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_Sl9kuDK368sOA51oT1MXg");
-        })();
-    </script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("user_Sl9kuDK368sOA51oT1MXg");
+    })();
+</script>
 <div class="row">
     <h2>Contact</h2>
     <form onsubmit="return sendMail(this);" method="POST" class="yellow lighten-4 forms col s12 m12 l12">
@@ -26,14 +26,15 @@
                 <label for="textarea1">Message</label>
             </div>
         </div>
-    </form>
-</div>
-<div class="container">
-    <div class="row">
-        <button class="btn btncontact waves-effect waves-light green">Send Message
+        <div class="container">
+            <div class="row">
+                <button class="btn btncontact waves-effect waves-light green" type="submit">Send Message
                 <i class="material-icons left">send</i>
              </button>
+            </div>
+    </form>
     </div>
+
 </div>
 <script src="static/assets/js/sendEmail.js"></script>
 {% endblock %}
