@@ -205,7 +205,7 @@ This project was developed using the [AWS Cloud9 IDE](https://aws.amazon.com/clo
 To deploy this project to GitHub Pages from its GitHub repository, the following steps were done:
 
 1. Log into GitHub account.
-2. From the list of repositories on the screen, select Errepulify/Repositories/Animal-bites
+2. From the list of repositories on the screen, select Errepulify/Repositories/wildlife-globe-explorer
 3. From the menu items near the top of the page, select Settings.
 4. Scroll down to the GitHub Pages section.
 5. Under Source click the drop-down menu labelled None and select Master Branch
