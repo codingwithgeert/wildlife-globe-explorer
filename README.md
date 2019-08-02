@@ -89,6 +89,8 @@ On tablet this hamburger icon isn't there and are the links just in the navigati
 
 ### Manual testing: 
 
+All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer 
+
 #### 1. Add animal on the website:
 
 ##### by clicking on the button
@@ -184,13 +186,18 @@ Mobile:
 4. Now you see all the animal you added on the page.
 5. If you not see any animal or data you put in go back to "1. Add animal to the website".
 
+
+### Automatic test:
+
+I used a unittest to test a GET function.
+This is done by the code:  self.assertIn(b'Boar', result.data)
+Where 'Boar' can be any data that is in the actual database/spotlist
+If its in the database the test passed if its not it is failed.
+
 #### Bugs
 - Datepicker
   - Google Chrome:  When you are on the add animal page. And try to click on the datepicker it wont show up unless you first once clicked on the right mouse button.
     This is a bug in Materialize itself.
-
-  
-
 
 ## Deployment
 This project was developed using the [AWS Cloud9 IDE](https://aws.amazon.com/cloud9/?origin=c9io), committed to git and pushed to GitHub using the built in function within cloud9.
@@ -266,6 +273,7 @@ SECRET_KEY | `<your_secret_key>`
 
 - collapsible code is from [Materialize](https://materializecss.com/collapsible.html) 
 - testing code is from [Unittest](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertIn)
+- the emailJS code is from Code institute.
 
 ### Acknowledgements
 
