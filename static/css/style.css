@@ -74,6 +74,7 @@ footer {
     content: "\f09b";
     margin-left: 1rem;
 }
+
 .fab {
     font-family: "Font Awesome 5 Brands";
     margin-top: 1rem;
@@ -216,8 +217,9 @@ footer {
         margin-left: 3rem;
     }
 
+
     footer {
-        line-height: 65px;
+        line-height: 106px;
     }
 
     .startbtn {
@@ -273,15 +275,15 @@ footer {
     .delete {
         margin-left: 21rem;
     }
-    
-    .btncontact {
-    margin-left: 27rem;
-}
 
-.yellow.lighten-4 {
-    margin-bottom: 9rem;
-}
-.forms{
-    margin-top: 8rem;
-}
+    .btncontact {
+        margin-left: 27rem;
+    }
+
+    .yellow.lighten-4 {
+        margin-bottom: 9rem;
+    }
+    .forms {
+        margin-top: 8rem;
+    }
 }
