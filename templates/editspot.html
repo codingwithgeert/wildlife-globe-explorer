@@ -1,12 +1,11 @@
 {% extends 'base.html' %} {% block content %}
-
 <div class="container">
-  <h2>Your spotted animal</h2gi>
+  <h2>Your spotted animal</h2>
   <form class="yellow lighten-4" action="{{ url_for('update_spot', spotlist_id=spotlist._id) }}" method="POST" class="col s12">
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">fingerprint</i>
-        <input id="animal_name" name="animal_name" type="text" class="validate" value="{{spotlist.animal_name}}">
+           <input id="animal_name" name="animal_name" type="text" class="validate" value="{{spotlist.animal_name}}">
         <label for="icon_prefix">Animal name</label>
       </div>
     </div>
@@ -18,29 +17,33 @@
         <label for="icon_telephone">Animal Description</label>
       </div>
     </div>
-    
-    <div class="row">
+
+  <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">class</i>
         <select id="animal_class" name="animal_class" type="text">
                         <option value="mammal">Mammals</option>
                         <option value="birds">Birds</option>
+                        <option value="fish">Fish</option>
+                         <option value="reptiles">Reptiles</option>
+                          <option value="amphibians">Amphibians</option>
+                           <option value="arthropods">Arthropods</option>
                      </select>
       </div>
     </div>
     
-<div class="row">
+    <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">wc</i>
         <select id="animal_gender" name="animal_gender" type="text">
-           <option value="animal_gender" >Choose Gender</option>
+           <option value="" disabled selected>Choose Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="unknown">Unknown</option>
           </select>
       </div>
     </div>
-
+    
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">pin_drop</i>
@@ -48,39 +51,31 @@
         <label for="icon_prefix">Location</label>
       </div>
     </div>
-
+    
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">today</i>
-        <input id="date_found" name="date_found" type="text" class="datepicker">
+        <textarea input id="date_found"  name="date_found"  type="text" class="datepicker">{{spotlist.date_found}}</textarea>
         <label for="icon_prefix">Date Found</label>
       </div>
     </div>
-
+    
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">insert_photo</i>
-        <textarea name="animal_image" id="animal_image" class="materialize-textarea">{{spotlist.animal_image}}</textarea>
+       <textarea name="animal_image" id="animal_image" class="materialize-textarea">{{spotlist.animal_image}}</textarea>
         <label for="icon_prefix">Image URL</label>
       </div>
     </div>
-
-
-<div class="container">
+    
+     
+    <div class="container">
       <div class="row">
-        <button class="btn btnaddanimal waves-effect waves-light green" type="submit" name="action">Edit Animal
+        <button class="btn btnaddanimal waves-effect waves-light green" type="submit" name="action">Add Animal
                 <i class="material-icons right">playlist_add</i>
              </button>
       </div>
     </div>
   </form>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    date_found = Date.parse('{{spotlist.date_found}}');
-    $('#date_found').pickadate('picker').set('select', date_found, { format: 'dd/mm/yyyy' }).trigger('change');
-  });
-</script>
-{% endblock%}
+{% endblock %}
