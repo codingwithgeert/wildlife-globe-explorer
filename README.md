@@ -6,6 +6,9 @@
 Not that long ago I was able to see a beaver in its natural environment.
 This made me thinking won't it be cool to have a website where you can have a database with all the animals you spotted in the wild.
 
+The link to live page: [Wildlife Globe Explorer](https://wildlife-globe-explorer.herokuapp.com/)
+
+
 ## UX
  
 #### User Stories
