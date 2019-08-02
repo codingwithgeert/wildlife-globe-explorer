@@ -5,11 +5,11 @@
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">fingerprint</i>
-           <input id="animal_name" name="animal_name" type="text" class="validate" value="{{spotlist.animal_name}}">
+        <input id="animal_name" name="animal_name" type="text" class="validate" value="{{spotlist.animal_name}}">
         <label for="icon_prefix">Animal name</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">subject</i>
@@ -18,10 +18,10 @@
       </div>
     </div>
 
-  <div class="row">
+    <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">class</i>
-        <select id="animal_class" name="animal_class" type="text">
+        <select id="{{spotlist.animal_class}}" name="animal_class" type="text">
                         <option value="mammal">Mammals</option>
                         <option value="birds">Birds</option>
                         <option value="fish">Fish</option>
@@ -29,9 +29,10 @@
                           <option value="amphibians">Amphibians</option>
                            <option value="arthropods">Arthropods</option>
                      </select>
+        <label for="icon_prefix">animal class</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">wc</i>
@@ -41,9 +42,10 @@
                         <option value="female">Female</option>
                         <option value="unknown">Unknown</option>
           </select>
+        <label for="icon_prefix">Gender</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">pin_drop</i>
@@ -51,24 +53,24 @@
         <label for="icon_prefix">Location</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">today</i>
-        <textarea input id="date_found"  name="date_found"  type="text" class="datepicker">{{spotlist.date_found}}</textarea>
+        <textarea input id="date_found" name="date_found" type="text" class="datepicker">{{spotlist.date_found}}</textarea>
         <label for="icon_prefix">Date Found</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">insert_photo</i>
-       <textarea name="animal_image" id="animal_image" class="materialize-textarea">{{spotlist.animal_image}}</textarea>
+        <textarea name="animal_image" id="animal_image" class="materialize-textarea">{{spotlist.animal_image}}</textarea>
         <label for="icon_prefix">Image URL</label>
       </div>
     </div>
-    
-     
+
+
     <div class="container">
       <div class="row">
         <button class="btn btnaddanimal waves-effect waves-light green" type="submit" name="action">Add Animal
